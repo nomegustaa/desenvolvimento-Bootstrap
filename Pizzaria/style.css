@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@media(max-width: 1000px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+ul li a{
+    margin: 10px;
+}
+ul li a:hover{
+    background: #d83737;
+    border-radius: 10px;
+    color: #fff;
+}
+.ul{
+    margin-bottom: 30px;
+    /* alinhar o texto com a imagem */
+}
+h1, h2{
+    color: #fdd756;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.txtp{
+    color: #d83737;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+.txt{
+    color: rgb(85, 85, 85);
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.btn1{
+    border: none;
+    background: #d83737;
+    color: #fff;
+    padding: 10px;
+}
+.hr{
+    font-family: sans-serif;
+    color: #000;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.txth5{
+    color: #fd9631;
+}
+
+.cardcor{
+    background: #fdd756;
+}
+
+/* responsividade */
+@media(max-width:1200px){
+    .img01{
+        height: 300px;
+        width: 300px;
+        margin:10px;
+    }
+}
+@media(max-width:800px){
+    .container01{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reserve, .txt{
+        text-align: center;
+    }
+    .divimg, .divcard{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+    @keyframes animação-nav {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(360px);
+            opacity: 0;
+        }
+    }
+}
+
+/* animação */
+
+.animação-nav{
+    animation: animação-nav 5s linear infinite;
+}
+@keyframes animação-nav{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(550px);
+        opacity: 0;
+    }
+}
+.animação-nome{
+    animation: pizza-nome 5s alternate infinite;
+}
+@keyframes pizza-nome{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.animação{
+    animation: pizza-gira 5s linear infinite;
+}
+@keyframes pizza-gira{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
