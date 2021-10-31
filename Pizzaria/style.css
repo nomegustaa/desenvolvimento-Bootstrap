@@ -52,7 +52,6 @@ h1, h2{
 .cardcor{
     background: #fdd756;
 }
-
 /* responsividade */
 @media(max-width:1200px){
     .img01{
